@@ -20,7 +20,7 @@ stv = 4
 
 dec=0.7 # set weight decrement for habituation
 
-pls=[0, 0, 1, 0, 0] # set up a pulse
+pls=[0, 0, 1, 2, 0] # set up a pulse
 
 # TODO: then create a list of 6 pulses, called x, to use for input
 x = list(6 * pls)
@@ -71,7 +71,7 @@ ax1 = fig.add_subplot(211)
 ax1.plot(x) #, color='white',  antialiased=False, edgecolors='black', linewidth=1, shade=False, alpha=1)
 ax1.set_ylabel('Input')
 ax1.set_xlim(0, nTs)
-ax1.set_ylim(0, 1.1)
+ax1.set_ylim(0, 3)
 
 ax2 = fig.add_subplot(212)
 ax2.plot(y[0]) #, color='white',  antialiased=False, edgecolors='black', linewidth=1, shade=False, alpha=1)
